@@ -82,7 +82,7 @@ public class LoginTest extends ExecutionContext implements Login {
     }
 
     public void v_BaseURLAndLogo() {
-        boolean checkTitle = false;
+        boolean checkTitle = true;
         checkTitle = BrowserInitHelper.getMinWaiter().until(ExpectedConditions.titleIs(csvDataReaderLoginPage.getBrowserTitle()));
         if (checkTitle) {
             ConsoleLogger.SuccessLog("Browser Title is displayed....");
